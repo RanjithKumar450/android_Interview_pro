@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeDetailsActivity">
+
+
+
+    <TextView
+        android:id="@+id/title_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Details"
+        android:background="#c2c6cc"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_back_btn"
+        android:layout_marginTop="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_layout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/emp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/emp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/emp_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#00b7ff"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="4dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/emp_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/emp_address_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/emp_address_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="15dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number :"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/emp_phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="#00b7ff"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="4dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_layout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Details: "
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Website :"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/company_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sss"
+                        android:textSize="18dp"
+                        android:textColor="#00b7ff"
+                        android:layout_marginLeft="4dp"
+                        />
+
+                </LinearLayout>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/company_website"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:layout_marginBottom="20dp"-->
+<!--                    />-->
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
